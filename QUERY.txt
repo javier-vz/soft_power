@@ -1,0 +1,10 @@
+Version: v1
+Congelada el: 2026-08-11
+Anios: 2015-2026
+hk/mo/tw agrupados con cn: no
+
+PASO 1 - recuperacion en la API (title_and_abstract.search):
+"cultural heritage" OR "intangible heritage" OR "world heritage" OR "archaeology" OR "archaeological" OR "museum" OR "monument" OR "historic architecture" OR "cultural relic" OR "heritage site"
+
+PASO 2 - filtro local de IA sobre titulo + resumen (basta un termino):
+artificial intelligence | machine learning | deep learning | neural network | computer vision | knowledge graph | large language model | natural language processing | generative model | convolutional | transformer model

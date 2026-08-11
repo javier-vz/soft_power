@@ -1,0 +1,27 @@
+INFORME DE ANALISIS - IA y patrimonio cultural
+==============================================================
+
+PANORAMA POR PAIS
+ pais codigo  corpus_A_patrimonio  corpus_B_IA_patrimonio  tasa_IA_pct  colab_intl_pct  citas_medianas  citas_medias  acceso_abierto_pct  articulos_pct  congresos_pct
+China     cn                22372                    1849         8.26            23.1               1           4.5                67.0           60.7           29.5
+
+ADVERTENCIA METODOLOGICA
+Solo hay un pais descargado. Ninguna afirmacion comparativa es
+posible todavia: sin corpus espejo, cualquier cifra sobre este
+pais es descriptiva y no permite decir si es o no distintiva.
+
+EVOLUCION DE LA TASA DE IA (ultimos anios)
+pais  China
+anio       
+2019    2.4
+2020    2.8
+2021    4.2
+2022    6.3
+2023    7.6
+2024    9.2
+2025   13.8
+2026   11.8
+
+PERFIL TECNOLOGICO (% del corpus B que menciona cada tecnica)
+ pais    n  artificial intelligence  machine learning  deep learning  neural network  computer vision  knowledge graph  large language model  natural language processing  generative model  convolutional  transformer model
+China 1849                     32.7              15.0           28.3            19.6              8.1              9.9                   5.9                          4.2               1.9           14.5                1.0
