@@ -1,0 +1,10 @@
+﻿pais,codigo,trabajos_con_sitio,sitios_propios,sitios_ajenos,autorreferencia_pct,cobertura_pct,sitios_propios_mas_estudiados
+Peru,pe,2,2,0,100.0,8.3,chan chan (1); city of arequipa (1)
+China,cn,85,56,29,65.9,4.6,the great wall (11); mogao caves (7); yungang grottoes (6); quanzhou (5); macao (4)
+India,in,32,19,13,59.4,5.7,delhi (6); gujarat (3); sundarbans (3); taj mahal (3); ajanta caves (1)
+Grecia,gr,24,14,10,58.3,10.4,athens (9); mount athos (1); archaeological site of philippi (1); delphi (1); archaeological site of mystras (1)
+Italia,it,81,46,35,56.8,10.6,florence (16); venice (9); padua (7); naples (5); herculaneum (2)
+Japon,jp,5,2,3,40.0,3.2,iriomote island (1); shirakawa-go (1)
+Francia,fr,30,7,23,23.3,9.8,notre-dame (6); strasbourg (1)
+Egipto,eg,5,1,4,20.0,8.3,historic cairo (1)
+Reino Unido,gb,46,4,42,8.7,8.9,stonehenge (3); saltaire (1)

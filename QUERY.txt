@@ -1,5 +1,5 @@
 Version: v1
-Congelada el: 2026-08-11
+Congelada el: 2026-08-28
 Anios: 2015-2026
 hk/mo/tw agrupados con cn: no
 

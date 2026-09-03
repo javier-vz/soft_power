@@ -89,6 +89,26 @@ def normalizar(texto):
     return re.sub(r"\s+", " ", t).strip()
 
 
+_CACHE_PATRON = {}
+
+
+def aparece(variante, texto):
+    """Comprueba si la variante esta en el texto como palabra completa.
+
+    La comparacion por subcadena produce falsos positivos graves: "berat"
+    (ciudad albanesa inscrita por UNESCO) coincide dentro de "deliberate" y
+    "liberated". Se hace primero una prueba rapida de subcadena y solo cuando
+    esta da positivo se verifica el limite de palabra, que es mas costoso.
+    """
+    if variante not in texto:
+        return False
+    pat = _CACHE_PATRON.get(variante)
+    if pat is None:
+        pat = re.compile(r"(?<!\w)" + re.escape(variante) + r"(?!\w)")
+        _CACHE_PATRON[variante] = pat
+    return bool(pat.search(texto))
+
+
 def separar(serie, sep="; "):
     """Aplana una columna de listas separadas por punto y coma."""
     c = Counter()
@@ -192,49 +212,227 @@ def t5_instituciones(B, top=20):
     return pd.DataFrame(filas)
 
 
+def cargar_unesco(ruta):
+    """Lee la Lista del Patrimonio Mundial en xls, xlsx o csv.
+
+    El archivo oficial de whc.unesco.org trae los nombres de cada sitio en
+    seis idiomas y el codigo ISO del pais, lo que permite un emparejamiento
+    mucho mas fiable que el cotejo por nombre de pais.
+    """
+    ext = os.path.splitext(ruta)[1].lower()
+    if ext in (".xls", ".xlsx"):
+        u = pd.read_excel(ruta)
+    else:
+        u = pd.read_csv(ruta, encoding="utf-8-sig", low_memory=False)
+
+    col_iso = next((c for c in u.columns if c.lower() in ("iso_code", "iso", "country_code")), None)
+    # Solo ingles y espanol: el corpus de OpenAlex esta indexado en ingles, de
+    # modo que los nombres en frances, ruso, arabe o chino no aportan
+    # recuperacion y si producen colisiones graves. El caso mas claro es
+    # "Genes", nombre frances de Genova, que coincide con la palabra inglesa
+    # "genes" en un corpus cientifico.
+    cols_nombre = [c for c in u.columns if c.lower() in ("name_en", "name_es")] \
+                  or [c for c in u.columns if c.lower().startswith("name_")] \
+                  or [c for c in u.columns if re.search(r"name|site|nom", c, re.I)]
+    if not col_iso or not cols_nombre:
+        raise ValueError(f"No reconoci las columnas. Disponibles: {list(u.columns)[:15]}")
+
+    sitios = {}
+    for _, r in u.iterrows():
+        isos = {x.strip().lower() for x in str(r[col_iso]).split(",") if x.strip()}
+        if not isos:
+            continue
+        for c in cols_nombre:
+            for v in variantes_nombre(r[c]):
+                sitios.setdefault(v, set()).update(isos)
+    # Una variante corta que apunta a muchos paises suele ser una palabra
+    # generica que sobrevivio al recorte ("historic", "ensemble"). Se descarta.
+    # El limite se aplica solo a palabras sueltas: un nombre de dos o mas
+    # palabras presente en varios paises suele ser un sitio transfronterizo
+    # legitimo, como el Qhapaq Nan o el Arco Geodesico de Struve. El filtro
+    # por frecuencia sobre el corpus se encarga del resto.
+    genericas = [v for v, isos in sitios.items()
+                 if len(isos) > 3 and len(v.split()) == 1]
+    for v in genericas:
+        del sitios[v]
+    if genericas:
+        print(f"  descartadas {len(genericas)} variantes genericas: "
+              f"{', '.join(sorted(genericas)[:6])}{'...' if len(genericas) > 6 else ''}")
+
+    lista = sorted(sitios.items(), key=lambda x: -len(x[0]))
+    return lista, len(u)
+
+
+# Palabras genericas que encabezan los nombres oficiales de UNESCO y que los
+# trabajos academicos casi nunca usan. Se recortan para generar la forma corta.
+_PREFIJOS = re.compile(
+    r"^(the |los |las |el |la )?"
+    r"(historic(al)? (centre|center|sanctuary|town|city|monuments?|village|area)s?|"
+    r"archaeological (site|area|zone|ensemble|remains|park|landscape)s?|"
+    r"cultural (landscape|site|heritage)s?|"
+    r"natural (park|reserve|monument)s?|"
+    r"national park|old (town|city|quarter)|"
+    r"ruins|city|town|monastery|cathedral|church|fortress|palace|temple|"
+    r"centro historico|santuario historico|zona arqueologica|sitio arqueologico|"
+    r"paisaje cultural|parque nacional|ciudad|centre historique|"
+    r"ensemble|complex|group of monuments)"
+    r"\s+(of|de|del|des|du|d|and)?\s*", re.I)
+
+# Descriptores que aparecen al final: "Chan Chan Archaeological Zone".
+_SUFIJOS = re.compile(
+    r"\s+(archaeological (zone|site|area|park|ensemble)s?|national park|"
+    r"historic(al)? (centre|center|site|town|city)|cultural landscape|"
+    r"nature reserve|biosphere reserve|and its (lagoon|environs|surroundings))\s*$", re.I)
+
+# Terminos demasiado ambiguos para usarse como forma corta.
+_PELIGROSAS = {
+               # adjetivos y sustantivos genericos que sobreviven al recorte
+               "historic", "historical", "ancient", "modern", "cultural",
+               "natural", "national", "monuments", "monument", "ensemble",
+               "complex", "sanctuary", "architectural", "archaeological",
+               "primeval", "antiguos", "historico", "historique", "naturel",
+               "cultural landscape", "world heritage",
+               "bath", "wall", "centre", "center", "city", "old town", "park",
+               "ruins", "temple", "palace", "island", "islands", "lagoon",
+               "valley", "caves", "gardens", "cathedral", "church", "monastery",
+               "fortress", "castle", "bridge", "canal", "delta", "coast",
+               "forest", "lake", "river", "mountain", "desert", "reef",
+               # sustantivos y adjetivos observados como ruido en las pruebas
+               "coastal", "villages", "village", "houses", "house", "walls",
+               "residential", "surroundings", "settlement", "settlements",
+               "landscapes", "landscape", "ancient city", "natural environment",
+               "multi-layered", "inaccessible", "funerary", "biodiversity",
+               "ecosystem", "ecosystems", "reflection", "related", "central",
+               "convent", "studio", "sciences", "university", "lines", "forts",
+               "steel", "cultura", "culture", "historica", "museo", "terres",
+               "genes", "prehistoric sites", "residential ensemble",
+               "lakes", "basilica", "universidad", "volcanoes", "grottoes",
+               "caves", "islands", "mountains", "old city"}
+
+
+def variantes_nombre(bruto):
+    """Genera formas buscables de un nombre de sitio de la Lista de UNESCO.
+
+    Los nombres oficiales son largos y compuestos ("Archaeological Areas of
+    Pompei, Herculaneum and Torre Annunziata") mientras que los articulos usan
+    la forma breve ("Pompei"). Sin esta reduccion la deteccion queda muy por
+    debajo de lo real. La separacion se hace sobre el texto crudo, porque la
+    normalizacion elimina la puntuacion que marca las partes.
+    """
+    if not isinstance(bruto, str) or not bruto.strip():
+        return []
+
+    completo = normalizar(bruto)
+    if len(completo) < 6:
+        return []
+    out = [completo] if len(completo) >= 8 else []
+
+    # 1. Quitar el descriptor generico, al inicio o al final del nombre.
+    cuerpo = _PREFIJOS.sub("", bruto.strip())
+    cuerpo = _SUFIJOS.sub("", cuerpo).strip()
+
+    # 2. Separar en partes por coma, punto y coma o conector.
+    partes = re.split(r"[,;]| \band\b | \by\b | \bet\b | \bund\b ", cuerpo, flags=re.I)
+
+    for parte in partes:
+        parte = re.sub(r"^\s*(the|los|las|el|la|its|su|of|de)\s+", "", parte.strip(), flags=re.I)
+        # descarta subordinadas: "the properties of the holy see in that city..."
+        if len(parte.split()) > 5:
+            continue
+        n = normalizar(parte)
+        if 5 <= len(n) < len(completo) and n not in _PELIGROSAS and n not in out:
+            out.append(n)
+    return out
+
+
+# Un nombre de sitio genuino no puede aparecer en una fraccion grande del
+# corpus. Las variantes que superan este umbral se descartan como genericas.
+UMBRAL_GENERICA = 0.005    # 0,5 % de los trabajos analizados
+
+
 def t6_autorreferencia(B, ruta_unesco):
     """Tasa de autorreferencia patrimonial: cuanto estudia cada pais lo propio.
 
-    Requiere un CSV de la Lista del Patrimonio Mundial con, al menos, una
-    columna de nombre de sitio y una de pais (se detectan por heuristica).
+    Procede en dos pasadas. La primera registra todas las coincidencias entre
+    los textos y las variantes de nombre de la Lista del Patrimonio Mundial.
+    La segunda descarta las variantes que aparecen en demasiados trabajos,
+    porque un toponimo real no puede estar en una fraccion grande del corpus,
+    y recien entonces clasifica cada trabajo como propio o ajeno.
+
+    Este filtro por frecuencia es necesario: los nombres oficiales son largos
+    y compuestos, y al reducirlos a formas breves aparecen fragmentos genericos
+    ("cultura", "university") que de otro modo dominarian la deteccion.
     """
-    u = pd.read_csv(ruta_unesco, encoding="utf-8-sig", low_memory=False)
-    col_sitio = next((c for c in u.columns if re.search(r"name|site|nom", c, re.I)), None)
-    col_pais = next((c for c in u.columns if re.search(r"states|country|pais|iso", c, re.I)), None)
-    if not col_sitio or not col_pais:
-        print(f"  aviso: no reconoci las columnas de {ruta_unesco}; columnas: {list(u.columns)[:12]}")
-        return pd.DataFrame()
+    sitios, n_sitios = cargar_unesco(ruta_unesco)
+    print(f"  Lista de UNESCO: {n_sitios} sitios, {len(sitios)} variantes de nombre")
 
-    sitios = []
-    for _, r in u.iterrows():
-        nombre = normalizar(r[col_sitio])
-        if len(nombre) >= 6:
-            sitios.append((nombre, normalizar(r[col_pais])))
+    # ── Pasada 1: registrar coincidencias ───────────────────────────────────
+    coincidencias = {}          # (pais, indice de fila) -> lista de variantes
+    frecuencia = Counter()      # variante -> numero de trabajos en que aparece
+    n_total = 0
+    for pais, b in sorted(B.items()):
+        for idx, r in b.iterrows():
+            n_total += 1
+            texto = normalizar(f"{r.title} {r.abstract}")
+            hallados = [(v, isos) for v, isos in sitios if aparece(v, texto)]
+            if hallados:
+                coincidencias[(pais, idx)] = hallados
+                for v, _ in hallados:
+                    frecuencia[v] += 1
 
-    filas = []
+    # ── Pasada 2: descartar variantes demasiado frecuentes ──────────────────
+    tope = max(3, int(UMBRAL_GENERICA * n_total))
+    genericas = {v for v, n in frecuencia.items() if n > tope}
+    if genericas:
+        muestra = ", ".join(v for v, _ in
+                            sorted(((v, frecuencia[v]) for v in genericas),
+                                   key=lambda x: -x[1])[:8])
+        print(f"  descartadas {len(genericas)} variantes por frecuencia "
+              f"(mas de {tope} trabajos): {muestra}")
+
+    filas, detalle = [], []
     for pais, b in sorted(B.items()):
         if not len(b):
             continue
-        nombre_pais = normalizar(NOMBRES.get(pais, pais))
         propios = ajenos = 0
-        for _, r in b.iterrows():
-            texto = normalizar(str(r.title) + " " + str(r.abstract))
-            encontrados = [(s, p) for s, p in sitios if s in texto]
-            if not encontrados:
+        cuenta = Counter()
+        for idx, r in b.iterrows():
+            hallados = [(v, isos) for v, isos in coincidencias.get((pais, idx), [])
+                        if v not in genericas]
+            if not hallados:
                 continue
-            if any(nombre_pais in p or p in nombre_pais for _, p in encontrados):
+            # la coincidencia mas larga es la mas especifica
+            hallados.sort(key=lambda x: -len(x[0]))
+            propio = any(pais in isos for _, isos in hallados)
+            if propio:
                 propios += 1
+                cuenta[next(v for v, isos in hallados if pais in isos)] += 1
             else:
                 ajenos += 1
+            detalle.append({
+                "pais_autor": pais,
+                "titulo": str(r.title)[:180],
+                "sitio_detectado": hallados[0][0],
+                "paises_del_sitio": ";".join(sorted(hallados[0][1])),
+                "clasificacion": "propio" if propio else "ajeno",
+            })
         total = propios + ajenos
         filas.append({
             "pais": NOMBRES.get(pais, pais),
-            "trabajos_con_sitio_identificado": total,
+            "codigo": pais,
+            "trabajos_con_sitio": total,
             "sitios_propios": propios,
             "sitios_ajenos": ajenos,
             "autorreferencia_pct": round(100 * propios / total, 1) if total else None,
             "cobertura_pct": round(100 * total / len(b), 1),
+            "sitios_propios_mas_estudiados": "; ".join(f"{s} ({n})" for s, n in cuenta.most_common(5)),
         })
+
+    if detalle:
+        pd.DataFrame(detalle).to_csv(f"{DIR_SALIDA}/t6b_detecciones.csv",
+                                     index=False, encoding="utf-8-sig")
+        print(f"  detalle de cada deteccion -> {DIR_SALIDA}/t6b_detecciones.csv")
+        print("  revisar a mano una muestra: el emparejamiento es heuristico")
     return pd.DataFrame(filas).sort_values("autorreferencia_pct", ascending=False)
 
 
@@ -312,8 +510,9 @@ def informe(t1, t2, t3, t6):
 
     if len(t6):
         L.append("AUTORREFERENCIA PATRIMONIAL")
-        L.append("Proporcion de trabajos que estudian patrimonio del propio pais,")
-        L.append("entre los que mencionan algun sitio de la Lista de UNESCO.")
+        L.append("De los trabajos que mencionan algun sitio de la Lista del Patrimonio")
+        L.append("Mundial, que proporcion estudia patrimonio del propio pais. La columna")
+        L.append("de cobertura indica cuantos trabajos del corpus fue posible clasificar.")
         L.append(t6.to_string(index=False))
         L.append("")
 
