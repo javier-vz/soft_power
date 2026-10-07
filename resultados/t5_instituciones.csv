@@ -1,181 +1,181 @@
 ﻿pais,institucion,n,pct_del_corpus,colab_intl_pct,citas_medianas
-China,Chinese Academy of Sciences,44,2.4,44.0,2
-China,Wuhan University,34,1.8,28.6,1
-China,Tsinghua University,34,1.8,38.2,1
-China,Beijing University of Civil Engineering and Architecture,30,1.6,20.0,2
-China,Zhejiang University,30,1.6,36.7,2
-China,Northwest University,30,1.6,16.7,3
-China,Shanghai University,28,1.5,29.7,1
-China,University of Chinese Academy of Sciences,25,1.4,36.0,4
-China,State Administration of Cultural Heritage,25,1.4,28.0,2
-China,Peking University,25,1.4,48.0,1
-China,Hubei University of Technology,23,1.2,4.3,1
-China,Beijing Normal University,21,1.1,38.1,1
-China,Minzu University of China,20,1.1,10.0,1
-China,Tianjin University,19,1.0,24.3,2
-China,Shanghai Jiao Tong University,19,1.0,42.1,2
-China,Tongji University,18,1.0,38.9,3
-China,Hunan University,18,1.0,33.3,1
-China,Communication University of China,18,1.0,27.8,1
-China,Guangzhou Academy of Fine Arts,17,0.9,23.5,0
-China,Northwestern Polytechnical University,16,0.9,31.2,1
-Egipto,Cairo University,8,13.3,50.0,2
-Egipto,"Arab Academy for Science, Technology, and Maritime Transport",5,8.3,60.0,0
-Egipto,Helwan University,4,6.7,25.0,5
-Egipto,Misr International University,3,5.0,0.0,4
-Egipto,Alexandria University,3,5.0,33.3,1
-Egipto,University of Sadat City,3,5.0,0.0,5
-Egipto,British University in Egypt,3,5.0,0.0,2
-Egipto,South Valley University,2,3.3,100.0,18
-Egipto,Egyptian Atomic Energy Authority,2,3.3,100.0,8
-Egipto,Institute of Archeology,2,3.3,100.0,8
-Egipto,Joint Institute for Nuclear Research,2,3.3,100.0,8
-Egipto,Russian Academy of Sciences,2,3.3,100.0,8
-Egipto,Egyptian Museum,2,3.3,0.0,2
-Egipto,Zewail City of Science and Technology,2,3.3,0.0,19
-Egipto,Nile University,2,3.3,50.0,0
-Egipto,Modern Academy,2,3.3,50.0,0
-Egipto,Ain Shams University,2,3.3,0.0,2
-Egipto,Benha University,2,3.3,50.0,0
-Egipto,Ministry of Antiquities,2,3.3,50.0,0
-Egipto,Al-Azhar University,2,3.3,0.0,3
-Francia,Centre National de la Recherche Scientifique,90,29.4,53.3,4
-Francia,Sorbonne Université,23,7.5,73.9,7
-Francia,Université de Bourgogne,16,5.2,87.5,6
-Francia,Institut national de recherche en sciences et technologies du numérique,13,4.2,46.2,3
-Francia,Université Côte d'Azur,13,4.2,46.2,1
-Francia,Université Paris 1 Panthéon-Sorbonne,12,3.9,66.7,4
-Francia,Institut de Recherche pour le Développement,12,3.9,41.7,1
-Francia,Université Paris Cité,11,3.6,63.6,4
-Francia,Université Paris-Saclay,11,3.6,63.6,4
-Francia,École Pratique des Hautes Études,10,3.3,70.0,2
-Francia,Commissariat à l'Énergie Atomique et aux Énergies Alternatives,10,3.3,70.0,0
-Francia,Lyon 1 Université,10,3.3,40.0,0
-Francia,EURECOM,9,2.9,44.4,2
-Francia,Université de Bordeaux,9,2.9,88.9,7
-Francia,Qatar University,8,2.6,100.0,18
-Francia,Aix-Marseille Université,8,2.6,50.0,3
-Francia,CEA Paris-Saclay,8,2.6,87.5,0
-Francia,"Laboratoire Pluridisciplinaire de Recherche en Ingénierie des Systèmes, Mécanique et Energétique",8,2.6,12.5,7
-Francia,Archéozoologie et Archéobotanique,8,2.6,75.0,4
-Francia,Equipes Traitement de l'Information et Systèmes,8,2.6,12.5,5
-Reino Unido,University College London,41,8.0,73.2,3
-Reino Unido,University of Cambridge,36,7.0,83.3,0
-Reino Unido,Natural History Museum,26,5.1,44.4,1
-Reino Unido,University of Edinburgh,25,4.9,48.0,1
-Reino Unido,Google DeepMind (United Kingdom),23,4.5,95.7,0
-Reino Unido,Google (United States),23,4.5,100.0,0
-Reino Unido,Prompt (Canada),22,4.3,100.0,0
-Reino Unido,Renewable Energy Systems (United States),22,4.3,100.0,0
-Reino Unido,University of Southampton,20,3.9,50.0,2
-Reino Unido,University of Oxford,18,3.5,44.4,1
-Reino Unido,King's College London,18,3.5,66.7,0
-Reino Unido,Imperial College London,16,3.1,50.0,0
-Reino Unido,University of the Arts London,12,2.3,66.7,0
-Reino Unido,University of Sheffield,12,2.3,58.3,1
-Reino Unido,University of Glasgow,11,2.1,45.5,4
-Reino Unido,Centre National de la Recherche Scientifique,10,1.9,100.0,7
-Reino Unido,Goldsmiths University of London,10,1.9,90.0,4
-Reino Unido,Brunel University of London,10,1.9,100.0,1
-Reino Unido,Cardiff University,10,1.9,60.0,3
-Reino Unido,Durham University,9,1.8,66.7,10
-Grecia,University of the Aegean,38,16.5,28.9,0
-Grecia,National Technical University of Athens,36,15.7,19.4,4
-Grecia,Athena Research and Innovation Center In Information Communication & Knowledge Technologies,21,9.1,28.6,0
-Grecia,Democritus University of Thrace,21,9.1,9.5,0
-Grecia,University of Crete,21,9.1,30.8,1
-Grecia,Foundation for Research and Technology Hellas,18,7.8,55.6,6
-Grecia,University of West Attica,17,7.4,35.3,3
-Grecia,National and Kapodistrian University of Athens,16,7.0,37.5,14
-Grecia,University of Patras,14,6.1,35.7,6
-Grecia,Aristotle University of Thessaloniki,13,5.7,30.8,3
-Grecia,University of Piraeus,11,4.8,0.0,10
-Grecia,Information Technologies Institute,10,4.3,30.0,3
-Grecia,Ionian University,10,4.3,0.0,2
-Grecia,Centre for Research and Technology Hellas,9,3.9,33.3,6
-Grecia,Hellenic Open University,9,3.9,22.2,0
-Grecia,FORTH Institute of Computer Science,9,3.9,0.0,0
-Grecia,University of Peloponnese,8,3.5,25.0,3
-Grecia,Technical University of Crete,7,3.0,28.6,9
-Grecia,International Hellenic University,7,3.0,14.3,3
-Grecia,Cyprus University of Technology,6,2.6,100.0,13
-India,Chitkara University,55,9.7,9.1,0
-India,Noida International University,35,6.2,14.3,0
-India,International Institute of Information Technology,29,5.1,17.6,0
-India,Graphic Era University,23,4.1,13.0,3
-India,Vellore Institute of Technology University,19,3.4,26.3,1
-India,SRM Institute of Science and Technology,15,2.7,13.3,0
-India,Vivekananda Global University,14,2.5,0.0,0
-India,Bharati Vidyapeeth Deemed University,13,2.3,38.5,0
-India,Amrita Vishwa Vidyapeetham,13,2.3,0.0,3
-India,Siksha O Anusandhan University,13,2.3,23.1,0
-India,"Anna University, Chennai",11,1.9,9.1,6
-India,Meenakshi Academy of Higher Education and Research,11,1.9,36.4,0
-India,"G.S. Science, Arts And Commerce College",11,1.9,0.0,0
-India,Parul University,11,1.9,9.1,0
-India,Vinayaka Missions University,11,1.9,18.2,0
-India,KLE Technological University,10,1.8,0.0,1
-India,Sathyabama Institute of Science and Technology,10,1.8,10.0,0
-India,Sharda University,10,1.8,20.0,0
-India,Indian Institute of Technology Kharagpur,9,1.6,22.2,9
-India,Jain University,9,1.6,22.2,0
-Italia,University of Bologna,62,8.1,40.3,2
-Italia,Sapienza University of Rome,58,7.6,41.4,1
-Italia,University of Florence,51,6.7,29.4,2
-Italia,Politecnico di Torino,47,6.2,17.0,3
-Italia,National Research Council,42,5.5,24.5,3
-Italia,University of Naples Federico II,37,4.9,24.3,1
-Italia,University of Padua,37,4.9,32.4,2
-Italia,Marche Polytechnic University,36,4.7,25.0,5
-Italia,University of Pisa,36,4.7,44.4,1
-Italia,Politecnico di Milano,35,4.6,31.4,3
-Italia,University of Salerno,33,4.3,48.5,1
-Italia,Fondazione Bruno Kessler,26,3.4,38.5,5
-Italia,University of Turin,23,3.0,43.5,0
-Italia,Roma Tre University,20,2.6,20.0,1
-Italia,University of Modena and Reggio Emilia,19,2.5,26.3,1
-Italia,University of Macerata,16,2.1,43.8,5
-Italia,University of Calabria,16,2.1,37.5,2
-Italia,Ca' Foscari University of Venice,14,1.8,42.9,1
-Italia,"Istituto di Scienza e Tecnologie dell'Informazione ""Alessandro Faedo""",13,1.7,30.8,4
-Italia,Centre National de la Recherche Scientifique,13,1.7,100.0,16
-Japon,The University of Tokyo,18,11.6,66.7,0
-Japon,Ritsumeikan University,14,9.0,50.0,2
-Japon,University of Tsukuba,10,6.5,30.0,0
-Japon,The University of Osaka,7,4.5,85.7,1
-Japon,Nara National Research Institute for Cultural Properties,6,3.9,66.7,5
-Japon,Kyushu University,6,3.9,50.0,2
-Japon,Kyoto University,5,3.2,60.0,3
-Japon,Kumamoto University,5,3.2,40.0,0
-Japon,National Institute of Advanced Industrial Science and Technology,4,2.6,25.0,3
-Japon,Universitas Borobudur,4,2.6,100.0,7
-Japon,University College London,4,2.6,100.0,1
-Japon,National Institute of Informatics,4,2.6,75.0,15
-Japon,University of Aizu,4,2.6,0.0,2
-Japon,Keio University,4,2.6,20.0,0
-Japon,Iwate University,4,2.6,25.0,0
-Japon,National Astronomical Observatory of Japan,3,1.9,100.0,26
-Japon,Tohoku University,3,1.9,33.3,11
-Japon,The University of Kitakyushu,3,1.9,66.7,4
-Japon,Zhejiang University,3,1.9,100.0,3
-Japon,Chiba University,3,1.9,50.0,3
-Peru,Pontificia Universidad Católica del Perú,6,25.0,50.0,1
-Peru,Universidad Católica San Pablo,3,12.5,100.0,30
-Peru,National University of Saint Anthony the Abbot in Cuzco,3,12.5,0.0,0
-Peru,Simón Bolívar University,2,8.3,100.0,45
-Peru,École Supérieure des Technologies Industrielles Avancées,2,8.3,100.0,45
-Peru,Universidad Científica del Sur,2,8.3,50.0,17
-Peru,Universidad de Lima,2,8.3,50.0,3
-Peru,Instituto Federal da Bahia,2,8.3,100.0,57
-Peru,Northern Arizona University,2,8.3,100.0,0
-Peru,San Diego State University,2,8.3,100.0,0
-Peru,Southern Illinois University Carbondale,2,8.3,100.0,0
-Peru,National University of Engineering,2,8.3,50.0,0
-Peru,Peruvian University of Applied Sciences,1,4.2,0.0,7
-Peru,Universidade Federal da Bahia,1,4.2,100.0,7
-Peru,Universidad Señor de Sipán,1,4.2,100.0,40
-Peru,University of Cartagena,1,4.2,100.0,40
-Peru,Istituto di Scienze Marine del Consiglio Nazionale delle Ricerche,1,4.2,100.0,6
-Peru,Marche Polytechnic University,1,4.2,100.0,6
-Peru,Universidad San Ignacio de Loyola,1,4.2,0.0,28
-Peru,Valencian International University,1,4.2,100.0,30
+China,Chinese Academy of Sciences,31,2.3,37.1,4
+China,Tsinghua University,31,2.3,38.7,1
+China,Beijing University of Civil Engineering and Architecture,26,1.9,19.2,2
+China,Wuhan University,26,1.9,17.1,4
+China,Northwest University,26,1.9,19.2,5
+China,Zhejiang University,24,1.8,43.2,4
+China,Shanghai University,22,1.6,33.3,2
+China,State Administration of Cultural Heritage,22,1.6,27.3,2
+China,Hubei University of Technology,20,1.5,5.0,1
+China,Peking University,19,1.4,36.8,2
+China,Beijing Normal University,17,1.2,29.4,1
+China,University of Chinese Academy of Sciences,17,1.2,29.4,7
+China,Tongji University,17,1.2,41.2,3
+China,Minzu University of China,17,1.2,5.9,2
+China,Tianjin University,16,1.2,27.6,5
+China,Shanghai Jiao Tong University,15,1.1,53.3,3
+China,Communication University of China,15,1.1,26.7,1
+China,Hunan University,14,1.0,35.3,2
+China,Guangzhou Academy of Fine Arts,13,0.9,23.1,1
+China,Harbin Institute of Technology,12,0.9,41.7,5
+Egipto,Cairo University,8,15.4,50.0,2
+Egipto,"Arab Academy for Science, Technology, and Maritime Transport",5,9.6,60.0,0
+Egipto,Helwan University,4,7.7,25.0,5
+Egipto,Misr International University,3,5.8,0.0,4
+Egipto,Alexandria University,3,5.8,33.3,1
+Egipto,University of Sadat City,3,5.8,0.0,5
+Egipto,British University in Egypt,3,5.8,0.0,2
+Egipto,South Valley University,2,3.8,100.0,18
+Egipto,Egyptian Museum,2,3.8,0.0,2
+Egipto,Zewail City of Science and Technology,2,3.8,0.0,19
+Egipto,Modern Academy,2,3.8,50.0,0
+Egipto,Ain Shams University,2,3.8,0.0,2
+Egipto,Benha University,2,3.8,50.0,0
+Egipto,Ministry of Antiquities,2,3.8,50.0,0
+Egipto,Al-Azhar University,2,3.8,0.0,3
+Egipto,American University in Cairo,2,3.8,100.0,1
+Egipto,University of Calgary,2,3.8,100.0,0
+Egipto,University of Sunderland,1,1.9,100.0,32
+Egipto,Egyptian Atomic Energy Authority,1,1.9,100.0,17
+Egipto,Institute of Archeology,1,1.9,100.0,17
+Francia,Centre National de la Recherche Scientifique,85,31.5,55.3,5
+Francia,Sorbonne Université,21,7.8,81.0,8
+Francia,Université de Bourgogne,16,5.9,87.5,6
+Francia,Université Côte d'Azur,13,4.8,46.2,1
+Francia,Institut national de recherche en sciences et technologies du numérique,12,4.4,41.7,3
+Francia,Université Paris 1 Panthéon-Sorbonne,12,4.4,66.7,4
+Francia,Université Paris-Saclay,11,4.1,63.6,4
+Francia,Institut de Recherche pour le Développement,11,4.1,45.5,2
+Francia,École Pratique des Hautes Études,9,3.3,77.8,4
+Francia,Université Paris Cité,9,3.3,66.7,8
+Francia,EURECOM,9,3.3,44.4,2
+Francia,Qatar University,8,3.0,100.0,18
+Francia,Aix-Marseille Université,8,3.0,50.0,3
+Francia,Lyon 1 Université,8,3.0,37.5,1
+Francia,"Laboratoire Pluridisciplinaire de Recherche en Ingénierie des Systèmes, Mécanique et Energétique",8,3.0,12.5,7
+Francia,Archéozoologie et Archéobotanique,8,3.0,75.0,4
+Francia,Equipes Traitement de l'Information et Systèmes,8,3.0,12.5,5
+Francia,Université de Bordeaux,8,3.0,87.5,8
+Francia,Arts et Métiers,7,2.6,85.7,10
+Francia,"Cultures et Environnements. Préhistoire, Antiquité, Moyen Âge",7,2.6,42.9,0
+Reino Unido,University College London,35,9.0,68.6,5
+Reino Unido,University of Cambridge,26,6.7,80.8,2
+Reino Unido,Natural History Museum,21,5.4,50.0,2
+Reino Unido,University of Edinburgh,20,5.1,60.0,2
+Reino Unido,University of Southampton,15,3.9,46.7,3
+Reino Unido,University of Oxford,14,3.6,57.1,4
+Reino Unido,King's College London,12,3.1,75.0,1
+Reino Unido,Imperial College London,12,3.1,58.3,1
+Reino Unido,University of Glasgow,10,2.6,50.0,4
+Reino Unido,Goldsmiths University of London,10,2.6,90.0,4
+Reino Unido,Durham University,9,2.3,66.7,10
+Reino Unido,University of South Wales,9,2.3,44.4,5
+Reino Unido,Centre National de la Recherche Scientifique,9,2.3,100.0,10
+Reino Unido,University of Manchester,9,2.3,44.4,4
+Reino Unido,Cardiff University,9,2.3,66.7,5
+Reino Unido,The Open University,9,2.3,77.8,1
+Reino Unido,University of Sheffield,9,2.3,77.8,1
+Reino Unido,University of Bologna,8,2.1,100.0,4
+Reino Unido,University of the Arts London,8,2.1,50.0,3
+Reino Unido,University of Exeter,7,1.8,85.7,23
+Grecia,National Technical University of Athens,35,18.3,20.0,4
+Grecia,University of the Aegean,27,14.1,11.1,3
+Grecia,Democritus University of Thrace,16,8.4,12.5,1
+Grecia,Athena Research and Innovation Center In Information Communication & Knowledge Technologies,15,7.9,20.0,0
+Grecia,Foundation for Research and Technology Hellas,15,7.9,53.3,10
+Grecia,University of West Attica,15,7.9,40.0,3
+Grecia,University of Patras,14,7.3,35.7,6
+Grecia,Aristotle University of Thessaloniki,13,6.8,30.8,3
+Grecia,National and Kapodistrian University of Athens,13,6.8,46.2,16
+Grecia,University of Crete,13,6.8,22.2,7
+Grecia,University of Piraeus,10,5.2,0.0,12
+Grecia,Centre for Research and Technology Hellas,9,4.7,33.3,6
+Grecia,Information Technologies Institute,9,4.7,33.3,3
+Grecia,FORTH Institute of Computer Science,9,4.7,0.0,0
+Grecia,Ionian University,8,4.2,0.0,3
+Grecia,Technical University of Crete,7,3.7,28.6,9
+Grecia,Hellenic Open University,7,3.7,28.6,0
+Grecia,University of Peloponnese,7,3.7,28.6,3
+Grecia,Cyprus University of Technology,6,3.1,100.0,13
+Grecia,International Hellenic University,6,3.1,0.0,3
+India,Chitkara University,53,12.9,7.5,0
+India,Noida International University,30,7.3,13.3,0
+India,Graphic Era University,21,5.1,9.5,4
+India,International Institute of Information Technology,20,4.9,13.0,0
+India,Vellore Institute of Technology University,13,3.2,30.8,8
+India,Vivekananda Global University,13,3.2,0.0,0
+India,SRM Institute of Science and Technology,12,2.9,8.3,0
+India,"Anna University, Chennai",11,2.7,9.1,6
+India,Amrita Vishwa Vidyapeetham,11,2.7,0.0,4
+India,Parul University,11,2.7,9.1,0
+India,Siksha O Anusandhan University,11,2.7,9.1,0
+India,Vinayaka Missions University,11,2.7,18.2,0
+India,Sathyabama Institute of Science and Technology,9,2.2,11.1,0
+India,Sharda University,9,2.2,11.1,0
+India,KLE Technological University,8,1.9,0.0,3
+India,Indian Institute of Technology Kharagpur,8,1.9,25.0,10
+India,Amity University,8,1.9,37.5,0
+India,Jain University,7,1.7,0.0,0
+India,St. Joseph's Institute of Technology,6,1.5,16.7,1
+India,Bharati Vidyapeeth Deemed University,6,1.5,16.7,0
+Italia,University of Bologna,48,7.5,39.6,4
+Italia,Sapienza University of Rome,48,7.5,37.5,2
+Italia,University of Florence,44,6.8,25.0,4
+Italia,Politecnico di Torino,40,6.2,17.5,4
+Italia,National Research Council,36,5.6,22.0,5
+Italia,Marche Polytechnic University,34,5.3,23.5,6
+Italia,Politecnico di Milano,33,5.1,33.3,3
+Italia,University of Naples Federico II,32,5.0,25.0,2
+Italia,University of Padua,31,4.8,38.7,3
+Italia,University of Pisa,30,4.7,40.0,2
+Italia,University of Salerno,29,4.5,44.8,3
+Italia,Fondazione Bruno Kessler,24,3.7,37.5,8
+Italia,University of Turin,19,3.0,36.8,0
+Italia,Roma Tre University,18,2.8,16.7,2
+Italia,University of Modena and Reggio Emilia,16,2.5,25.0,3
+Italia,University of Macerata,13,2.0,38.5,9
+Italia,University of Catania,13,2.0,7.7,13
+Italia,Italian Institute of Technology,12,1.9,50.0,2
+Italia,Centre National de la Recherche Scientifique,12,1.9,100.0,19
+Italia,University of Calabria,12,1.9,25.0,2
+Japón,The University of Tokyo,14,11.1,78.6,3
+Japón,Ritsumeikan University,12,9.5,50.0,5
+Japón,University of Tsukuba,7,5.6,14.3,3
+Japón,The University of Osaka,7,5.6,85.7,1
+Japón,Kyushu University,6,4.8,50.0,2
+Japón,Nara National Research Institute for Cultural Properties,5,4.0,80.0,7
+Japón,Kyoto University,5,4.0,60.0,3
+Japón,National Institute of Advanced Industrial Science and Technology,4,3.2,25.0,3
+Japón,Universitas Borobudur,4,3.2,100.0,7
+Japón,University College London,4,3.2,100.0,1
+Japón,National Institute of Informatics,4,3.2,75.0,15
+Japón,Kumamoto University,4,3.2,50.0,2
+Japón,National Astronomical Observatory of Japan,3,2.4,100.0,26
+Japón,Tohoku University,3,2.4,33.3,11
+Japón,Zhejiang University,3,2.4,100.0,5
+Japón,Chiba University,3,2.4,50.0,3
+Japón,University of Cambridge,3,2.4,100.0,0
+Japón,Keio University,3,2.4,0.0,1
+Japón,Japan Advanced Institute of Science and Technology,3,2.4,100.0,3
+Japón,University of Brawijaya,3,2.4,100.0,1
+Perú,Pontificia Universidad Católica del Perú,6,31.6,50.0,1
+Perú,Universidad Católica San Pablo,3,15.8,100.0,30
+Perú,Simón Bolívar University,2,10.5,100.0,45
+Perú,École Supérieure des Technologies Industrielles Avancées,2,10.5,100.0,45
+Perú,Universidad Científica del Sur,2,10.5,50.0,17
+Perú,Instituto Federal da Bahia,2,10.5,100.0,57
+Perú,Northern Arizona University,2,10.5,100.0,0
+Perú,San Diego State University,2,10.5,100.0,0
+Perú,Southern Illinois University Carbondale,2,10.5,100.0,0
+Perú,Peruvian University of Applied Sciences,1,5.3,0.0,7
+Perú,Universidade Federal da Bahia,1,5.3,100.0,7
+Perú,Universidad Señor de Sipán,1,5.3,100.0,40
+Perú,University of Cartagena,1,5.3,100.0,40
+Perú,Istituto di Scienze Marine del Consiglio Nazionale delle Ricerche,1,5.3,100.0,6
+Perú,Marche Polytechnic University,1,5.3,100.0,6
+Perú,Universidad de Lima,1,5.3,100.0,6
+Perú,Universidad San Ignacio de Loyola,1,5.3,0.0,28
+Perú,Valencian International University,1,5.3,100.0,30
+Perú,Jorge Basadre Grohmann National University,1,5.3,0.0,4
+Perú,Private University of the North,1,5.3,0.0,4

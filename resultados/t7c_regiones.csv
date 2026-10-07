@@ -1,0 +1,181 @@
+﻿pais,codigo,corpus,region,region_clave,n_trabajos,n_corpus,pct_corpus_pct,pct_corpus_ic_inf,pct_corpus_ic_sup
+China,cn,A,Ruta de la Seda / Franja y la Ruta,ruta_seda,245,18326,1.3,1.2,1.5
+China,cn,A,África subsahariana,africa_subsahariana,240,18326,1.3,1.2,1.5
+China,cn,A,Oriente Medio y Norte de África,oriente_medio_n_africa,226,18326,1.2,1.1,1.4
+China,cn,A,Asia Central,asia_central,156,18326,0.9,0.7,1.0
+China,cn,A,Asia meridional,asia_sur,208,18326,1.1,1.0,1.3
+China,cn,A,Sudeste asiático,sudeste_asiatico,276,18326,1.5,1.3,1.7
+China,cn,A,Asia oriental,asia_oriental,351,18326,1.9,1.7,2.1
+China,cn,A,Europa,europa,796,18326,4.3,4.1,4.6
+China,cn,A,América Latina y Caribe,america_latina_caribe,118,18326,0.6,0.5,0.8
+China,cn,A,Norteamérica y Oceanía,norteamerica_oceania,259,18326,1.4,1.3,1.6
+Egipto,eg,A,Ruta de la Seda / Franja y la Ruta,ruta_seda,1,2963,0.0,0.0,0.2
+Egipto,eg,A,África subsahariana,africa_subsahariana,86,2963,2.9,2.4,3.6
+Egipto,eg,A,Oriente Medio y Norte de África,oriente_medio_n_africa,245,2963,8.3,7.3,9.3
+Egipto,eg,A,Asia Central,asia_central,11,2963,0.4,0.2,0.7
+Egipto,eg,A,Asia meridional,asia_sur,21,2963,0.7,0.5,1.1
+Egipto,eg,A,Sudeste asiático,sudeste_asiatico,6,2963,0.2,0.1,0.4
+Egipto,eg,A,Asia oriental,asia_oriental,32,2963,1.1,0.8,1.5
+Egipto,eg,A,Europa,europa,139,2963,4.7,4.0,5.5
+Egipto,eg,A,América Latina y Caribe,america_latina_caribe,20,2963,0.7,0.4,1.0
+Egipto,eg,A,Norteamérica y Oceanía,norteamerica_oceania,34,2963,1.1,0.8,1.6
+Francia,fr,A,Ruta de la Seda / Franja y la Ruta,ruta_seda,28,15264,0.2,0.1,0.3
+Francia,fr,A,África subsahariana,africa_subsahariana,932,15264,6.1,5.7,6.5
+Francia,fr,A,Oriente Medio y Norte de África,oriente_medio_n_africa,1258,15264,8.2,7.8,8.7
+Francia,fr,A,Asia Central,asia_central,113,15264,0.7,0.6,0.9
+Francia,fr,A,Asia meridional,asia_sur,195,15264,1.3,1.1,1.5
+Francia,fr,A,Sudeste asiático,sudeste_asiatico,284,15264,1.9,1.7,2.1
+Francia,fr,A,Asia oriental,asia_oriental,339,15264,2.2,2.0,2.5
+Francia,fr,A,Europa,europa,2190,15264,14.3,13.8,14.9
+Francia,fr,A,América Latina y Caribe,america_latina_caribe,514,15264,3.4,3.1,3.7
+Francia,fr,A,Norteamérica y Oceanía,norteamerica_oceania,419,15264,2.7,2.5,3.0
+Reino Unido,gb,A,Ruta de la Seda / Franja y la Ruta,ruta_seda,66,27418,0.2,0.2,0.3
+Reino Unido,gb,A,África subsahariana,africa_subsahariana,1617,27418,5.9,5.6,6.2
+Reino Unido,gb,A,Oriente Medio y Norte de África,oriente_medio_n_africa,1648,27418,6.0,5.7,6.3
+Reino Unido,gb,A,Asia Central,asia_central,125,27418,0.5,0.4,0.5
+Reino Unido,gb,A,Asia meridional,asia_sur,578,27418,2.1,1.9,2.3
+Reino Unido,gb,A,Sudeste asiático,sudeste_asiatico,467,27418,1.7,1.6,1.9
+Reino Unido,gb,A,Asia oriental,asia_oriental,915,27418,3.3,3.1,3.6
+Reino Unido,gb,A,Europa,europa,4143,27418,15.1,14.7,15.5
+Reino Unido,gb,A,América Latina y Caribe,america_latina_caribe,898,27418,3.3,3.1,3.5
+Reino Unido,gb,A,Norteamérica y Oceanía,norteamerica_oceania,1071,27418,3.9,3.7,4.1
+Grecia,gr,A,Ruta de la Seda / Franja y la Ruta,ruta_seda,9,4528,0.2,0.1,0.4
+Grecia,gr,A,África subsahariana,africa_subsahariana,20,4528,0.4,0.3,0.7
+Grecia,gr,A,Oriente Medio y Norte de África,oriente_medio_n_africa,139,4528,3.1,2.6,3.6
+Grecia,gr,A,Asia Central,asia_central,5,4528,0.1,0.0,0.3
+Grecia,gr,A,Asia meridional,asia_sur,15,4528,0.3,0.2,0.5
+Grecia,gr,A,Sudeste asiático,sudeste_asiatico,7,4528,0.2,0.1,0.3
+Grecia,gr,A,Asia oriental,asia_oriental,23,4528,0.5,0.3,0.8
+Grecia,gr,A,Europa,europa,526,4528,11.6,10.7,12.6
+Grecia,gr,A,América Latina y Caribe,america_latina_caribe,18,4528,0.4,0.3,0.6
+Grecia,gr,A,Norteamérica y Oceanía,norteamerica_oceania,25,4528,0.6,0.4,0.8
+India,in,A,Ruta de la Seda / Franja y la Ruta,ruta_seda,15,6957,0.2,0.1,0.4
+India,in,A,África subsahariana,africa_subsahariana,146,6957,2.1,1.8,2.5
+India,in,A,Oriente Medio y Norte de África,oriente_medio_n_africa,183,6957,2.6,2.3,3.0
+India,in,A,Asia Central,asia_central,30,6957,0.4,0.3,0.6
+India,in,A,Asia meridional,asia_sur,340,6957,4.9,4.4,5.4
+India,in,A,Sudeste asiático,sudeste_asiatico,191,6957,2.7,2.4,3.2
+India,in,A,Asia oriental,asia_oriental,137,6957,2.0,1.7,2.3
+India,in,A,Europa,europa,393,6957,5.6,5.1,6.2
+India,in,A,América Latina y Caribe,america_latina_caribe,87,6957,1.3,1.0,1.5
+India,in,A,Norteamérica y Oceanía,norteamerica_oceania,152,6957,2.2,1.9,2.6
+Italia,it,A,Ruta de la Seda / Franja y la Ruta,ruta_seda,24,20404,0.1,0.1,0.2
+Italia,it,A,África subsahariana,africa_subsahariana,422,20404,2.1,1.9,2.3
+Italia,it,A,Oriente Medio y Norte de África,oriente_medio_n_africa,1074,20404,5.3,5.0,5.6
+Italia,it,A,Asia Central,asia_central,50,20404,0.2,0.2,0.3
+Italia,it,A,Asia meridional,asia_sur,163,20404,0.8,0.7,0.9
+Italia,it,A,Sudeste asiático,sudeste_asiatico,88,20404,0.4,0.4,0.5
+Italia,it,A,Asia oriental,asia_oriental,250,20404,1.2,1.1,1.4
+Italia,it,A,Europa,europa,2070,20404,10.1,9.7,10.6
+Italia,it,A,América Latina y Caribe,america_latina_caribe,310,20404,1.5,1.4,1.7
+Italia,it,A,Norteamérica y Oceanía,norteamerica_oceania,189,20404,0.9,0.8,1.1
+Japón,jp,A,Ruta de la Seda / Franja y la Ruta,ruta_seda,9,4117,0.2,0.1,0.4
+Japón,jp,A,África subsahariana,africa_subsahariana,107,4117,2.6,2.2,3.1
+Japón,jp,A,Oriente Medio y Norte de África,oriente_medio_n_africa,150,4117,3.6,3.1,4.3
+Japón,jp,A,Asia Central,asia_central,17,4117,0.4,0.3,0.7
+Japón,jp,A,Asia meridional,asia_sur,98,4117,2.4,2.0,2.9
+Japón,jp,A,Sudeste asiático,sudeste_asiatico,308,4117,7.5,6.7,8.3
+Japón,jp,A,Asia oriental,asia_oriental,350,4117,8.5,7.7,9.4
+Japón,jp,A,Europa,europa,321,4117,7.8,7.0,8.7
+Japón,jp,A,América Latina y Caribe,america_latina_caribe,111,4117,2.7,2.2,3.2
+Japón,jp,A,Norteamérica y Oceanía,norteamerica_oceania,135,4117,3.3,2.8,3.9
+Perú,pe,A,Ruta de la Seda / Franja y la Ruta,ruta_seda,0,867,0.0,0.0,0.4
+Perú,pe,A,África subsahariana,africa_subsahariana,14,867,1.6,1.0,2.7
+Perú,pe,A,Oriente Medio y Norte de África,oriente_medio_n_africa,8,867,0.9,0.5,1.8
+Perú,pe,A,Asia Central,asia_central,0,867,0.0,0.0,0.4
+Perú,pe,A,Asia meridional,asia_sur,2,867,0.2,0.1,0.8
+Perú,pe,A,Sudeste asiático,sudeste_asiatico,6,867,0.7,0.3,1.5
+Perú,pe,A,Asia oriental,asia_oriental,7,867,0.8,0.4,1.7
+Perú,pe,A,Europa,europa,42,867,4.8,3.6,6.5
+Perú,pe,A,América Latina y Caribe,america_latina_caribe,178,867,20.5,18.0,23.3
+Perú,pe,A,Norteamérica y Oceanía,norteamerica_oceania,12,867,1.4,0.8,2.4
+China,cn,B,Ruta de la Seda / Franja y la Ruta,ruta_seda,9,1369,0.7,0.3,1.2
+China,cn,B,África subsahariana,africa_subsahariana,6,1369,0.4,0.2,1.0
+China,cn,B,Oriente Medio y Norte de África,oriente_medio_n_africa,7,1369,0.5,0.2,1.1
+China,cn,B,Asia Central,asia_central,3,1369,0.2,0.1,0.6
+China,cn,B,Asia meridional,asia_sur,7,1369,0.5,0.2,1.1
+China,cn,B,Sudeste asiático,sudeste_asiatico,9,1369,0.7,0.3,1.2
+China,cn,B,Asia oriental,asia_oriental,8,1369,0.6,0.3,1.1
+China,cn,B,Europa,europa,19,1369,1.4,0.9,2.2
+China,cn,B,América Latina y Caribe,america_latina_caribe,2,1369,0.1,0.0,0.5
+China,cn,B,Norteamérica y Oceanía,norteamerica_oceania,17,1369,1.2,0.8,2.0
+Egipto,eg,B,Ruta de la Seda / Franja y la Ruta,ruta_seda,0,52,0.0,0.0,6.9
+Egipto,eg,B,África subsahariana,africa_subsahariana,3,52,5.8,2.0,15.6
+Egipto,eg,B,Oriente Medio y Norte de África,oriente_medio_n_africa,6,52,11.5,5.4,23.0
+Egipto,eg,B,Asia Central,asia_central,0,52,0.0,0.0,6.9
+Egipto,eg,B,Asia meridional,asia_sur,0,52,0.0,0.0,6.9
+Egipto,eg,B,Sudeste asiático,sudeste_asiatico,0,52,0.0,0.0,6.9
+Egipto,eg,B,Asia oriental,asia_oriental,2,52,3.8,1.1,13.0
+Egipto,eg,B,Europa,europa,4,52,7.7,3.0,18.2
+Egipto,eg,B,América Latina y Caribe,america_latina_caribe,0,52,0.0,0.0,6.9
+Egipto,eg,B,Norteamérica y Oceanía,norteamerica_oceania,2,52,3.8,1.1,13.0
+Francia,fr,B,Ruta de la Seda / Franja y la Ruta,ruta_seda,0,270,0.0,0.0,1.4
+Francia,fr,B,África subsahariana,africa_subsahariana,4,270,1.5,0.6,3.7
+Francia,fr,B,Oriente Medio y Norte de África,oriente_medio_n_africa,13,270,4.8,2.8,8.1
+Francia,fr,B,Asia Central,asia_central,1,270,0.4,0.1,2.1
+Francia,fr,B,Asia meridional,asia_sur,2,270,0.7,0.2,2.7
+Francia,fr,B,Sudeste asiático,sudeste_asiatico,7,270,2.6,1.3,5.3
+Francia,fr,B,Asia oriental,asia_oriental,7,270,2.6,1.3,5.3
+Francia,fr,B,Europa,europa,26,270,9.6,6.7,13.7
+Francia,fr,B,América Latina y Caribe,america_latina_caribe,5,270,1.9,0.8,4.3
+Francia,fr,B,Norteamérica y Oceanía,norteamerica_oceania,7,270,2.6,1.3,5.3
+Reino Unido,gb,B,Ruta de la Seda / Franja y la Ruta,ruta_seda,1,389,0.3,0.0,1.4
+Reino Unido,gb,B,África subsahariana,africa_subsahariana,5,389,1.3,0.6,3.0
+Reino Unido,gb,B,Oriente Medio y Norte de África,oriente_medio_n_africa,12,389,3.1,1.8,5.3
+Reino Unido,gb,B,Asia Central,asia_central,1,389,0.3,0.0,1.4
+Reino Unido,gb,B,Asia meridional,asia_sur,10,389,2.6,1.4,4.7
+Reino Unido,gb,B,Sudeste asiático,sudeste_asiatico,8,389,2.1,1.0,4.0
+Reino Unido,gb,B,Asia oriental,asia_oriental,19,389,4.9,3.1,7.5
+Reino Unido,gb,B,Europa,europa,38,389,9.8,7.2,13.1
+Reino Unido,gb,B,América Latina y Caribe,america_latina_caribe,11,389,2.8,1.6,5.0
+Reino Unido,gb,B,Norteamérica y Oceanía,norteamerica_oceania,25,389,6.4,4.4,9.3
+Grecia,gr,B,Ruta de la Seda / Franja y la Ruta,ruta_seda,0,191,0.0,0.0,2.0
+Grecia,gr,B,África subsahariana,africa_subsahariana,1,191,0.5,0.1,2.9
+Grecia,gr,B,Oriente Medio y Norte de África,oriente_medio_n_africa,0,191,0.0,0.0,2.0
+Grecia,gr,B,Asia Central,asia_central,0,191,0.0,0.0,2.0
+Grecia,gr,B,Asia meridional,asia_sur,0,191,0.0,0.0,2.0
+Grecia,gr,B,Sudeste asiático,sudeste_asiatico,0,191,0.0,0.0,2.0
+Grecia,gr,B,Asia oriental,asia_oriental,0,191,0.0,0.0,2.0
+Grecia,gr,B,Europa,europa,5,191,2.6,1.1,6.0
+Grecia,gr,B,América Latina y Caribe,america_latina_caribe,0,191,0.0,0.0,2.0
+Grecia,gr,B,Norteamérica y Oceanía,norteamerica_oceania,2,191,1.0,0.3,3.7
+India,in,B,Ruta de la Seda / Franja y la Ruta,ruta_seda,0,412,0.0,0.0,0.9
+India,in,B,África subsahariana,africa_subsahariana,4,412,1.0,0.4,2.5
+India,in,B,Oriente Medio y Norte de África,oriente_medio_n_africa,5,412,1.2,0.5,2.8
+India,in,B,Asia Central,asia_central,1,412,0.2,0.0,1.4
+India,in,B,Asia meridional,asia_sur,7,412,1.7,0.8,3.5
+India,in,B,Sudeste asiático,sudeste_asiatico,4,412,1.0,0.4,2.5
+India,in,B,Asia oriental,asia_oriental,6,412,1.5,0.7,3.1
+India,in,B,Europa,europa,8,412,1.9,1.0,3.8
+India,in,B,América Latina y Caribe,america_latina_caribe,5,412,1.2,0.5,2.8
+India,in,B,Norteamérica y Oceanía,norteamerica_oceania,3,412,0.7,0.2,2.1
+Italia,it,B,Ruta de la Seda / Franja y la Ruta,ruta_seda,0,643,0.0,0.0,0.6
+Italia,it,B,África subsahariana,africa_subsahariana,11,643,1.7,1.0,3.0
+Italia,it,B,Oriente Medio y Norte de África,oriente_medio_n_africa,25,643,3.9,2.6,5.7
+Italia,it,B,Asia Central,asia_central,0,643,0.0,0.0,0.6
+Italia,it,B,Asia meridional,asia_sur,7,643,1.1,0.5,2.2
+Italia,it,B,Sudeste asiático,sudeste_asiatico,5,643,0.8,0.3,1.8
+Italia,it,B,Asia oriental,asia_oriental,7,643,1.1,0.5,2.2
+Italia,it,B,Europa,europa,39,643,6.1,4.5,8.2
+Italia,it,B,América Latina y Caribe,america_latina_caribe,8,643,1.2,0.6,2.4
+Italia,it,B,Norteamérica y Oceanía,norteamerica_oceania,8,643,1.2,0.6,2.4
+Japón,jp,B,Ruta de la Seda / Franja y la Ruta,ruta_seda,0,126,0.0,0.0,3.0
+Japón,jp,B,África subsahariana,africa_subsahariana,2,126,1.6,0.4,5.6
+Japón,jp,B,Oriente Medio y Norte de África,oriente_medio_n_africa,1,126,0.8,0.1,4.4
+Japón,jp,B,Asia Central,asia_central,0,126,0.0,0.0,3.0
+Japón,jp,B,Asia meridional,asia_sur,2,126,1.6,0.4,5.6
+Japón,jp,B,Sudeste asiático,sudeste_asiatico,8,126,6.3,3.3,12.0
+Japón,jp,B,Asia oriental,asia_oriental,9,126,7.1,3.8,13.0
+Japón,jp,B,Europa,europa,3,126,2.4,0.8,6.8
+Japón,jp,B,América Latina y Caribe,america_latina_caribe,3,126,2.4,0.8,6.8
+Japón,jp,B,Norteamérica y Oceanía,norteamerica_oceania,2,126,1.6,0.4,5.6
+Perú,pe,B,Ruta de la Seda / Franja y la Ruta,ruta_seda,0,19,0.0,0.0,16.8
+Perú,pe,B,África subsahariana,africa_subsahariana,0,19,0.0,0.0,16.8
+Perú,pe,B,Oriente Medio y Norte de África,oriente_medio_n_africa,0,19,0.0,0.0,16.8
+Perú,pe,B,Asia Central,asia_central,0,19,0.0,0.0,16.8
+Perú,pe,B,Asia meridional,asia_sur,0,19,0.0,0.0,16.8
+Perú,pe,B,Sudeste asiático,sudeste_asiatico,0,19,0.0,0.0,16.8
+Perú,pe,B,Asia oriental,asia_oriental,0,19,0.0,0.0,16.8
+Perú,pe,B,Europa,europa,0,19,0.0,0.0,16.8
+Perú,pe,B,América Latina y Caribe,america_latina_caribe,1,19,5.3,0.9,24.6
+Perú,pe,B,Norteamérica y Oceanía,norteamerica_oceania,0,19,0.0,0.0,16.8

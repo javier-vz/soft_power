@@ -1,0 +1,64 @@
+﻿definicion,pais,codigo,n_A,n_B,tasa_IA_pct,tasa_ic_inf,tasa_ic_sup,puesto
+"1. principal (2015-2025, 1 o mas terminos de IA)",China,cn,18326,1369,7.47,7.1,7.86,1.0
+"1. principal (2015-2025, 1 o mas terminos de IA)",Egipto,eg,2963,52,1.75,1.34,2.29,8.0
+"1. principal (2015-2025, 1 o mas terminos de IA)",Francia,fr,15264,270,1.77,1.57,1.99,7.0
+"1. principal (2015-2025, 1 o mas terminos de IA)",Reino Unido,gb,27418,389,1.42,1.29,1.57,9.0
+"1. principal (2015-2025, 1 o mas terminos de IA)",Grecia,gr,4528,191,4.22,3.67,4.84,3.0
+"1. principal (2015-2025, 1 o mas terminos de IA)",India,in,6957,412,5.92,5.39,6.5,2.0
+"1. principal (2015-2025, 1 o mas terminos de IA)",Italia,it,20404,643,3.15,2.92,3.4,4.0
+"1. principal (2015-2025, 1 o mas terminos de IA)",Japón,jp,4117,126,3.06,2.58,3.63,5.0
+"1. principal (2015-2025, 1 o mas terminos de IA)",Perú,pe,867,19,2.19,1.41,3.4,6.0
+2. incluyendo 2026 (anio parcial),China,cn,22177,1822,8.22,7.86,8.58,1.0
+2. incluyendo 2026 (anio parcial),Egipto,eg,3133,60,1.92,1.49,2.46,7.0
+2. incluyendo 2026 (anio parcial),Francia,fr,16222,306,1.89,1.69,2.11,8.0
+2. incluyendo 2026 (anio parcial),Reino Unido,gb,30601,514,1.68,1.54,1.83,9.0
+2. incluyendo 2026 (anio parcial),Grecia,gr,4951,230,4.65,4.09,5.27,3.0
+2. incluyendo 2026 (anio parcial),India,in,8717,566,6.49,5.99,7.03,2.0
+2. incluyendo 2026 (anio parcial),Italia,it,23515,762,3.24,3.02,3.47,5.0
+2. incluyendo 2026 (anio parcial),Japón,jp,4664,155,3.32,2.85,3.88,4.0
+2. incluyendo 2026 (anio parcial),Perú,pe,992,24,2.42,1.63,3.57,6.0
+3. solo trabajos con resumen,China,cn,14416,1252,8.68,8.24,9.16,1.0
+3. solo trabajos con resumen,Egipto,eg,2580,49,1.9,1.44,2.5,8.0
+3. solo trabajos con resumen,Francia,fr,12367,240,1.94,1.71,2.2,7.0
+3. solo trabajos con resumen,Reino Unido,gb,22555,361,1.6,1.44,1.77,9.0
+3. solo trabajos con resumen,Grecia,gr,3312,176,5.31,4.6,6.13,3.0
+3. solo trabajos con resumen,India,in,5313,360,6.78,6.13,7.48,2.0
+3. solo trabajos con resumen,Italia,it,15195,575,3.78,3.49,4.1,4.0
+3. solo trabajos con resumen,Japón,jp,3199,118,3.69,3.09,4.4,5.0
+3. solo trabajos con resumen,Perú,pe,688,18,2.62,1.66,4.1,6.0
+"4. sin repositorios (Zenodo, Research Square, ADS...)",China,cn,17450,1321,7.57,7.19,7.97,1.0
+"4. sin repositorios (Zenodo, Research Square, ADS...)",Egipto,eg,2839,50,1.76,1.34,2.31,7.0
+"4. sin repositorios (Zenodo, Research Square, ADS...)",Francia,fr,14751,239,1.62,1.43,1.84,8.0
+"4. sin repositorios (Zenodo, Research Square, ADS...)",Reino Unido,gb,24497,357,1.46,1.31,1.62,9.0
+"4. sin repositorios (Zenodo, Research Square, ADS...)",Grecia,gr,4158,160,3.85,3.3,4.48,3.0
+"4. sin repositorios (Zenodo, Research Square, ADS...)",India,in,6270,380,6.06,5.5,6.68,2.0
+"4. sin repositorios (Zenodo, Research Square, ADS...)",Italia,it,19282,600,3.11,2.88,3.37,4.0
+"4. sin repositorios (Zenodo, Research Square, ADS...)",Japón,jp,3918,119,3.04,2.54,3.62,5.0
+"4. sin repositorios (Zenodo, Research Square, ADS...)",Perú,pe,821,17,2.07,1.3,3.29,6.0
+5. solo articulos y actas de congreso,China,cn,16128,1260,7.81,7.41,8.24,1.0
+5. solo articulos y actas de congreso,Egipto,eg,2670,46,1.72,1.29,2.29,9.0
+5. solo articulos y actas de congreso,Francia,fr,10470,204,1.95,1.7,2.23,7.0
+5. solo articulos y actas de congreso,Reino Unido,gb,17969,311,1.73,1.55,1.93,8.0
+5. solo articulos y actas de congreso,Grecia,gr,3595,150,4.17,3.57,4.88,3.0
+5. solo articulos y actas de congreso,India,in,5253,363,6.91,6.26,7.63,2.0
+5. solo articulos y actas de congreso,Italia,it,16190,515,3.18,2.92,3.46,5.0
+5. solo articulos y actas de congreso,Japón,jp,3331,110,3.3,2.75,3.96,4.0
+5. solo articulos y actas de congreso,Perú,pe,735,18,2.45,1.55,3.84,6.0
+6. dos o mas terminos distintos de IA,China,cn,18326,398,2.17,1.97,2.39,2.0
+6. dos o mas terminos distintos de IA,Egipto,eg,2963,12,0.4,0.23,0.71,8.0
+6. dos o mas terminos distintos de IA,Francia,fr,15264,78,0.51,0.41,0.64,7.0
+6. dos o mas terminos distintos de IA,Reino Unido,gb,27418,110,0.4,0.33,0.48,8.0
+6. dos o mas terminos distintos de IA,Grecia,gr,4528,54,1.19,0.92,1.55,3.0
+6. dos o mas terminos distintos de IA,India,in,6957,168,2.41,2.08,2.8,1.0
+6. dos o mas terminos distintos de IA,Italia,it,20404,180,0.88,0.76,1.02,5.0
+6. dos o mas terminos distintos de IA,Japón,jp,4117,28,0.68,0.47,0.98,6.0
+6. dos o mas terminos distintos de IA,Perú,pe,867,8,0.92,0.47,1.81,4.0
+"7. solo articulos y actas, con resumen, 2 o mas terminos",China,cn,13291,366,2.75,2.49,3.05,2.0
+"7. solo articulos y actas, con resumen, 2 o mas terminos",Egipto,eg,2441,12,0.49,0.28,0.86,9.0
+"7. solo articulos y actas, con resumen, 2 o mas terminos",Francia,fr,8364,57,0.68,0.53,0.88,7.0
+"7. solo articulos y actas, con resumen, 2 o mas terminos",Reino Unido,gb,15437,80,0.52,0.42,0.64,8.0
+"7. solo articulos y actas, con resumen, 2 o mas terminos",Grecia,gr,2777,46,1.66,1.24,2.2,3.0
+"7. solo articulos y actas, con resumen, 2 o mas terminos",India,in,4431,154,3.48,2.98,4.06,1.0
+"7. solo articulos y actas, con resumen, 2 o mas terminos",Italia,it,12566,148,1.18,1.0,1.38,5.0
+"7. solo articulos y actas, con resumen, 2 o mas terminos",Japón,jp,2757,24,0.87,0.59,1.29,6.0
+"7. solo articulos y actas, con resumen, 2 o mas terminos",Perú,pe,624,8,1.28,0.65,2.51,4.0

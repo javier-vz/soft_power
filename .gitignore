@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Resultados intermedios regenerables (una fila por trabajo; pesan varios MB)
+resultados/intermedios/
+
+# Editores y sistema
+.DS_Store
+.idea/
+.vscode/

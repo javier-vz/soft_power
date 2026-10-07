@@ -13,8 +13,8 @@ resumen. Esto tiene dos ventajas sobre meter todo en una sola query booleana:
   1. Evita la sintaxis anidada con parentesis, que es la parte mas fragil
      de la busqueda de OpenAlex y la causa habitual de errores 400.
   2. El criterio de inclusion queda como codigo versionado y auditable, no
-     como una cadena opaca dentro de una URL. Mily puede revisarlo y ajustarlo
-     sin volver a descargar nada.
+     como una cadena opaca dentro de una URL. Cualquiera puede revisarlo y
+     ajustarlo sin volver a descargar nada.
 
 De paso, produce los dos primeros niveles de corpus de la nota de trabajo:
   corpus A (amplio)   = todo lo recuperado por patrimonio
@@ -369,6 +369,50 @@ def guardar(filas, ruta):
         w.writerows(filas)
 
 
+def contenido_query(incluir_regiones):
+    """Texto de QUERY.txt SIN la fecha: lo que define la consulta."""
+    L = [f"Version: {VERSION_QUERY}",
+         f"Anios: {ANIO_INI}-{ANIO_FIN}",
+         f"hk/mo/tw agrupados con cn: {'si' if incluir_regiones else 'no'}",
+         "",
+         "PASO 1 - recuperacion en la API (title_and_abstract.search):",
+         query_patrimonio(),
+         "",
+         "PASO 2 - filtro local de IA sobre titulo + resumen (basta un termino):",
+         " | ".join(TERMINOS_IA)]
+    return "\n".join(L) + "\n"
+
+
+def congelar_criterios(incluir_regiones, ruta="QUERY.txt"):
+    """Escribe QUERY.txt solo si no existe o si cambio la version.
+
+    La version 1.0 reescribia el archivo en cada ejecucion, con la fecha del
+    dia: la "fecha de congelacion" terminaba siendo la de la ultima corrida y
+    no la de las descargas. Ahora la fecha se escribe una sola vez, y si los
+    criterios cambian sin subir VERSION_QUERY el script se niega a continuar,
+    porque mezclar corpus de consultas distintas invalida la comparacion.
+    La fecha de descarga de cada pais esta en datos/log_descarga.csv y en la
+    columna fecha_descarga de cada CSV.
+    Devuelve False si no se debe continuar."""
+    nuevo = contenido_query(incluir_regiones)
+    if os.path.exists(ruta):
+        with open(ruta, encoding="utf-8") as fh:
+            previo = [l for l in fh.read().splitlines() if not l.startswith("Congelada el:")]
+        previo = "\n".join(previo) + "\n"
+        if previo == nuevo:
+            return True
+        if previo.splitlines()[0] == nuevo.splitlines()[0]:
+            print("ERROR: los criterios de busqueda cambiaron pero VERSION_QUERY sigue siendo "
+                  f"{VERSION_QUERY}.\n  Sube el numero de version en descarga_openalex.py y vuelve a "
+                  "descargar TODOS los paises:\n  mezclar corpus de consultas distintas invalida la comparacion.")
+            return False
+    cuerpo = nuevo.splitlines()
+    cuerpo.insert(1, f"Congelada el: {date.today().isoformat()}")
+    with open(ruta, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(cuerpo) + "\n")
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--diagnostico", action="store_true",
@@ -390,15 +434,8 @@ def main():
     codigos = list(PAISES) if args.todos else (args.paises or ["cn"])
     os.makedirs(DIR_SALIDA, exist_ok=True)
 
-    with open("QUERY.txt", "w", encoding="utf-8") as fh:
-        fh.write(f"Version: {VERSION_QUERY}\n")
-        fh.write(f"Congelada el: {date.today().isoformat()}\n")
-        fh.write(f"Anios: {ANIO_INI}-{ANIO_FIN}\n")
-        fh.write(f"hk/mo/tw agrupados con cn: {'si' if args.incluir_hk_mo_tw else 'no'}\n\n")
-        fh.write("PASO 1 - recuperacion en la API (title_and_abstract.search):\n")
-        fh.write(query_patrimonio() + "\n\n")
-        fh.write("PASO 2 - filtro local de IA sobre titulo + resumen (basta un termino):\n")
-        fh.write(" | ".join(TERMINOS_IA) + "\n")
+    if not congelar_criterios(args.incluir_hk_mo_tw):
+        return
     print(f"Criterios congelados en QUERY.txt ({VERSION_QUERY})\n")
 
     log = os.path.join(DIR_SALIDA, "log_descarga.csv")

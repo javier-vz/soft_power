@@ -1,0 +1,7 @@
+# Dependencias del analisis. Versiones minimas; entre parentesis, con cuales se probo.
+requests>=2.31       # (2.34.2)  solo para descarga_openalex.py
+pandas>=2.0          # (3.0.5)
+matplotlib>=3.7      # (3.11.2)
+xlrd>=2.0.1          # (2.0.2)   lee whc-sites-2025.xls
+pycountry>=23.12.11  # (26.2.16) lista de paises para el gazetteer
+geonamescache>=3.0    # (3.0.2)  nomenclator de ciudades para el analisis de sensibilidad

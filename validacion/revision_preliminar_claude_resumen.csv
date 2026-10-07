@@ -1,0 +1,8 @@
+﻿estrato,n,ok,error,ambiguo,acierto_pct,ic_inf,ic_sup
+PRECISION: todos los trabajos con referente,60,55,0,5,100.0,93.5,100.0
+"  precision, clase propio",20,20,0,0,100.0,83.9,100.0
+"  precision, clase mixto",20,17,0,3,100.0,81.6,100.0
+"  precision, clase ajeno",20,18,0,2,100.0,82.4,100.0
+"  precision, grupo China",30,28,0,2,100.0,87.9,100.0
+"  precision, grupo Otros",30,27,0,3,100.0,87.5,100.0
+RECUPERACION: sin referente que de verdad no nombra lugar,20,6,11,3,35.3,17.3,58.7
